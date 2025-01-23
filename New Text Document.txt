@@ -1,0 +1,214 @@
+local UiMakeLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Msunehub/Uilm/refs/heads/main/UiMat1.lua"))()
+local Notify = UiMakeLib:MakeNotify({
+	["Title"] = "ANH HOAN",
+	["Description"] = "Notification",
+	["Color"] = Color3.fromRGB(151, 207, 23),
+	["Content"] = "Welcome to Fluriore UI",
+	["Time"] = 1,
+	["Delay"] = 5
+})
+local Window = UiMakeLib:MakeGui({
+	["NameHub"] = "HOAN HUD",
+	["Description"] = "HEHE BOY",
+	["Color"] = Color3.fromRGB(151, 207, 23),
+	["Logo Player"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game:GetService("Players").LocalPlayer.UserId .."&width=420&height=420&format=png",
+	["Name Player"] = tostring(game:GetService("Players").LocalPlayer.Name),
+	["Tab Width"] = 140
+})
+local Tab1 = Window:CreateTab({
+	["Name"] = "MENU",
+	["Icon"] = "rbxassetid://7733960981"
+})
+local Tab2 = Window:CreateTab({
+	["Name"] = "Cài đặt",
+	["Icon"] = "rbxassetid://7734053495"
+})
+local Section = Tab1:AddSection("Mở Các Loại Hack")
+local Paragraph = Section:AddParagraph({
+	["Title"] = "",
+	["Content"] = ""
+})
+Paragraph:Set({
+	["Title"] = "Paragraph",
+	["Content"] = "This is a Paragraph"
+})
+local Toggle = Section:AddToggle({
+	["Title"]= "",
+	["Content"] = "",
+	["Default"] = false,
+	["Multi"] = true,
+	["Options"] = {"Option 1", "Option 2"},
+	["Selecting"] = {"Option 1"},
+	["Callback"] = function(Value) 
+		print(Value)
+	end
+})
+Toggle:Set(false)
+print(Toggle.Value)
+local Button = Section:AddButton({
+	["Title"] = "REDZ HUD",
+	["Content"] = "NO KEY",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+	end
+})
+local Button = Section:AddButton({
+	["Title"] = "Menu Gangten Hub",
+	["Content"] = "NO KEY",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
+	end
+})
+local Button = Section:AddButton({
+	["Title"] = "Fix lag",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+	end
+})
+local Button = Section:AddButton({
+	["Title"] = "BAP RED",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
+	end
+
+})
+local Button = Section:AddButton({
+	["Title"] = "KAI TUN",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
+	end
+
+})
+local Button = Section:AddButton({
+	["Title"] = "TRẨU ",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauTX"))()
+	end
+
+
+})
+local Button = Section:AddButton({
+	["Title"] = "RIS HUD",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
+	end
+
+
+})
+local Button = Section:AddButton({
+	["Title"] = "QUANTURM",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
+	end
+
+
+})
+local Button = Section:AddButton({
+	["Title"] = "DORAEMON",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinAE"))()
+	end
+
+})
+local Button = Section:AddButton({
+	["Title"] = "SPEED HUD",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))(
+	end
+
+})
+local Button = Section:AddButton({
+	["Title"] = "MIN GAMING",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/obfmoonsec/Masterhub/refs/heads/main/obf"))()
+	end
+
+
+})
+local Button = Section:AddButton({
+	["Title"] = "RUBU HUD",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/RubuHubV3.txt"))()
+	end
+})
+local Button = Section:AddButton({
+	["Title"] = "RONIX",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/513ccdb3ae8a61d4d7698fc337e5256d.lua"))()
+	end
+
+})
+local Button = Section:AddButton({
+	["Title"] = "W AZUE",
+	["Content"] = "NO KEY",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 getgenv().Team = "Pirates"
+         getgenv().AutoLoad = false --Will Load Script On Server Hop
+         getgenv().SlowLoadUi  = false
+         getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+         getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+	end
+})
+local Button = Section:AddButton({
+	["Title"] = "BLUEX",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/EN.lua"))()
+	end
+
+})
+local Button = Section:AddButton({
+	["Title"] = "BLUEX",
+	["Content"] = "Hỗ trợ máy yếu",
+	["Icon"] = "rbxassetid://16932740082",
+	["Callback"] = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/EN.lua"))()
+	end
+
+
+})
+Input:Set("Input TextBox")
+print(Input.Value)
+local Dropdown = Section:AddDropdown({
+	["Title"] = "Dropdown",
+	["Content"] = "This is a Dropdown",
+	["Multi"] = false,
+	["Options"] = {"Option 1", "Option 2"},
+	["Default"] = {"Option 1"},
+	["Callback"] = function(Value)
+		print(Value)
+	end
+})
+Dropdown:Set({"Option 1"})
+Dropdown:AddOption("Option 3")
+Dropdown:Clear()
+Dropdown:Refresh({"Option 1", "Option 2"}, {"Option 1"})
+print(Dropdown.Value)
+print(Dropdown.Options)
